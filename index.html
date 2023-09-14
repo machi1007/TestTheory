@@ -1,131 +1,105 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>測驗評量簡介</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        select {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        #methodDescription {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            max-width: 400px;
-            text-align: justify;
-        }
-
-        option:hover {
-            background-color: #ddd;
-        }
-    </style>
-</head>
-<body>
-    <h1>測驗理論基本整理</h1>
-    <h4>國立政治大學教育學系教育心理與輔導組博士生 王光多</h4>
-    <h3>選擇一個主題：</h3>
-    <select id="assessmentSelect">
-        <option value="default">請選擇</option>
-        <option value="1">測驗理論簡介</option>
-        <option value="2">大型評估建置概念與原理</option>
-        <option value="3">大型評估次級資料分析</option>
-        <option value="4">實作評估—口試評估</option>
-        <option value="5">實作評估—寫作評估</option>
-        <option value="6">實作評估—素養評估</option>
-        <option value="7">實作評估—動態評估</option>
-        <option value="8">實作評估—檔案與數位化檔案評估</option>
-        <option value="9">實作評估—問題/專案導向學習評估</option>
-        <option value="10">實作評估—概念圖/心智圖評估</option>
-        <option value="11">診斷評估—知識結構與認知診斷評估</option>
-        <option value="12">檢定評估—證照考試/電腦化適性測試</option>
-        <option value="13">評估方法—標準設定</option>
-        <option value="14">校務研究—學習成果評估</option>
-        <option value="15">校務研究—學生評鑑教學</option>
-    </select>
-
-    <div id="methodDescription">
-        <!-- 這裡將顯示方法學介紹 -->
-    </div>
-
-    <script>
-        const assessmentSelect = document.getElementById("assessmentSelect");
-        const methodDescription = document.getElementById("methodDescription");
-
-        assessmentSelect.addEventListener("change", function () {
-            const selectedValue = assessmentSelect.value;
-            switch (selectedValue) {
-                case "1":
-                                    methodDescription.textContent = "測驗理論";
-                                    break;
-                case "2":
-                    methodDescription.textContent = "大型評估建置概念與原理：大型評估是對大規模群體的教育評估，旨在了解教育體系的效益和質量。這包括評估評估工具的建立原理和方法。";
-                    break;
-                case "3":
-                    methodDescription.textContent = "大型評估次級資料分析：次級資料分析是利用已有的數據集，通過分析先前的研究成果來獲得洞見，以支持教育評估。";
-                    break;
-                case "4":
-                    methodDescription.textContent = "實作評估—口試評估：口試評估是一種評估方法，通過口頭交流來測試學生的知識、技巧和理解能力。通常用於語言和溝通技能的評估。";
-                    break;
-                case "5":
-                    methodDescription.textContent = "實作評估—寫作評估：寫作評估是通過書面作品來評估學生的寫作技巧、表達能力和邏輯思維。";
-                    break;
-                case "6":
-                    methodDescription.textContent = "實作評估—素養評估：素養評估侧重于評估學生的文化素质、阅读能力和文学理解能力，以促進綜合教育。";
-                    break;
-                case "7":
-                    methodDescription.textContent = "實作評估—動態評估：動態評估強調學習過程中的反饋和調整，以更好地理解學生的學習需求和潛力。";
-                    break;
-                case "8":
-                    methodDescription.textContent = "實作評估—檔案與數位化檔案評估：該方法允許學生創建文件或數位作品集，以展示他們的學術成就和進步。";
-                    break;
-                case "9":
-                    methodDescription.textContent = "實作評估—問題/專案導向學習評估：這種評估方法鼓勵學生解決實際問題或參與專案，以展示他們的能力和創造力。";
-                                        break;
-                                    case "10":
-                                        methodDescription.textContent = "實作評估—概念圖/心智圖評估：利用概念圖或心智圖評估學生的知識結構和思維方式，以了解他們的概念理解能力。";
-                                        break;
-                                    case "11":
-                                        methodDescription.textContent = "診斷評估—知識結構與認知診斷評估：該評估方法關注識別學生的認知過程，以深入了解他們的學習方式和挑戰。";
-                                        break;
-                                    case "12":
-                                        methodDescription.textContent = "檢定評估—證照考試/電腦化適性測試：證照考試是一種用於獲得專業資格的評估方法，而電腦化適性測試則根據學生的表現自動調整難度以提供更準確的評估。";
-                                        break;
-                                    case "13":
-                                        methodDescription.textContent = "評估方法—標準設定：標準設定涉及制定明確的評估標準和分數判定規則，以確保評估的公平性和可靠性。";
-                                        break;
-                                    case "14":
-                                        methodDescription.textContent = "校務研究—學習成果評估：校務研究關注學生在課程和專案中的學習成果，以提高教育質量。";
-                                        break;
-                                    case "15":
-                                        methodDescription.textContent = "校務研究—學生評估教學：通過學生的反饋和評估來改進教學質量和方法。";
-                                        break;
-                                    default:
-                                        methodDescription.textContent = "";
-                                }
-                            });
-                        </script>
-                    </body>
-                    </html>
+                                        <html lang="zh-TW">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>測驗評量基本整理</title>
+                                            <style>
+                                                body {
+                                                    font-family: Arial, sans-serif;
+                                                    background-color: #f7f7f7;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    min-height: 100vh;
+                                                }
+                                        
+                                                h1 {
+                                                    color: #333;
+                                                }
+                                        
+                                                h4 {
+                                                    color: #666;
+                                                }
+                                        
+                                                h5 {
+                                                    color: #666;
+                                                    align-self: flex-end;
+                                                    margin-right: 20px;
+                                                }
+                                        
+                                                h3 {
+                                                    color: #333;
+                                                }
+                                        
+                                                select {
+                                                    padding: 10px;
+                                                    font-size: 16px;
+                                                    border: 1px solid #ccc;
+                                                    border-radius: 5px;
+                                                    margin-top: 10px;
+                                                }
+                                        
+                                                #contentFrame {
+                                                    border: none;
+                                                    width: 100%;
+                                                    height: 400px;
+                                                    background-color: #fff;
+                                                    border-radius: 5px;
+                                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                                                    margin-top: 20px;
+                                                }
+                                        
+                                                option:hover {
+                                                    background-color: #ddd;
+                                                }
+                                            </style>
+                                        </head>
+                                        <body>
+                                            <h1>測驗理論基本整理</h1>
+                                            <h4>國立政治大學教育學系教育心理與輔導組博士生 王光多</h4>
+                                            <h5>最後更新時間：2023.09.14</h5>
+                                            <h3>選擇一個主題：</h3>
+                                            <select id="assessmentSelect">
+                                                <option value="default">請選擇</option>
+                                                <option value="1">測驗理論簡介</option>
+                                                <option value="2">大型評估建置概念與原理</option>
+                                                <option value="3">大型評估次級資料分析</option>
+                                                <option value="4">實作評估—口試評估</option>
+                                                <option value="5">實作評估—寫作評估</option>
+                                                <option value="6">實作評估—素養評估</option>
+                                                <option value="7">實作評估—動態評估</option>
+                                                <option value="8">實作評估—檔案與數位化檔案評估</option>
+                                                <option value="9">實作評估—問題/專案導向學習評估</option>
+                                                <option value="10">實作評估—概念圖/心智圖評估</option>
+                                                <option value="11">診斷評估—知識結構與認知診斷評估</option>
+                                                <option value="12">檢定評估—證照考試/電腦化適性測試</option>
+                                                <option value="13">評估方法—標準設定</option>
+                                                <option value="14">校務研究—學習成果評估</option>
+                                                <option value="15">校務研究—學生評鑑教學</option>
+                                            </select>
+                                            
+                                            <div id="methodDescription">
+                                                <!-- 這裡將顯示方法學介紹 -->
+                                            </div>
+                                            
+                                            <!-- 使用iframe来呈現内容 -->
+                                            <iframe id="contentFrame" src="1.html" frameborder="0" scrolling="no"></iframe>
+                                            
+                                            <script>
+                                                const assessmentSelect = document.getElementById("assessmentSelect");
+                                                const contentFrame = document.getElementById("contentFrame");
+                                            
+                                                assessmentSelect.addEventListener("change", function () {
+                                                    const selectedValue = assessmentSelect.value;
+                                                    // 對應HTML文件的URL
+                                                    const selectedPage = selectedValue === "default" ? "1.html" : selectedValue + ".html";
+                                                    // 更新iframe的src属性加載的HTML文件
+                                                    contentFrame.src = selectedPage;
+                                                });
+                                            </script>
+                                        </body>
+                                        </html>
