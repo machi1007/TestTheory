@@ -6,30 +6,57 @@
     <title>測驗理論介紹</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
         header {
             text-align: center;
             padding: 20px;
             background-color: #007BFF;
-            color: #fff;
+            color: white;
         }
         nav {
             background-color: #333;
-            color: #fff;
+            color: white;
             padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
-            margin-right: 20px;
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 20px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
         }
     </style>
 </head>
@@ -76,5 +103,8 @@
     </ul>
     <p>測驗設計需要謹慎的計劃和考慮，以確保測驗的有效性和公平性。</p>
 </section>
+    <footer>
+        &copy; 2024 測驗理論. All rights reserved.
+    </footer>
 </body>
 </html>
