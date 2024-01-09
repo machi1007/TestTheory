@@ -1,94 +1,89 @@
 <!DOCTYPE html>
-                                        <html lang="zh-TW">
-                                        <head>
-                                            <meta charset="UTF-8">
-                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                            <title>測驗評量基本整理</title>
-                                            <style>
-                                                body {
-                                                    font-family: Arial, sans-serif;
-                                                    background-color: #f7f7f7;
-                                                    margin: 0;
-                                                    padding: 0;
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    align-items: center;
-                                                    justify-content: center;
-                                                    min-height: 100vh;
-                                                }
-                                        
-                                                h1 {
-                                                    color: #333;
-                                                }
-                                        
-                                                h4 {
-                                                    color: #666;
-                                                }
-                                        
-                                                h5 {
-                                                    color: #666;
-                                                    align-self: flex-end;
-                                                    margin-right: 20px;
-                                                }
-                                        
-                                                h3 {
-                                                    color: #333;
-                                                }
-                                        
-                                                select {
-                                                    padding: 10px;
-                                                    font-size: 16px;
-                                                    border: 1px solid #ccc;
-                                                    border-radius: 5px;
-                                                    margin-top: 10px;
-                                                }
-                                        
-                                                #contentFrame {
-                                                    border: none;
-                                                    width: 100%;
-                                                    height: 400px;
-                                                    background-color: #fff;
-                                                    border-radius: 5px;
-                                                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-                                                    margin-top: 20px;
-                                                }
-                                        
-                                                option:hover {
-                                                    background-color: #ddd;
-                                                }
-                                            </style>
-                                        </head>
-                                        <body>
-                                            <h1>測驗理論基本整理</h1>
-                                            <h4>國立政治大學教育學系教育心理與輔導組博士生 王光多</h4>
-                                            <h5>最後更新時間：2023.09.14</h5>
-                                            <h3>選擇一個主題：</h3>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>測驗評量基本整理</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1, h3, h4, h5 {
+            color: #35424a;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #35424a;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        select:hover {
+            border-color: #1abc9c;
+        }
+
+        option {
+            color: #35424a;
+            background-color: #fff;
+        }
+
+        option:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+
+        #contentFrame {
+            border: 2px solid #35424a;
+            width: 80%;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #666;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <h1>測驗理論基本整理</h1>
+    <h4>國立政治大學教育學系教育心理與輔導組博士生 王光多</h4>
+    <h5>最後更新時間：2023.09.14</h5>
+    <h3>選擇一個主題：</h3>
                                             <select id="assessmentSelect">
                                                 <option value="default">請選擇</option>
                                                 <option value="1">測驗理論簡介</option>
-                                                <option value="2">大型評估建置概念與原理</option>
-                                                <option value="3">大型評估次級資料分析</option>
-                                                <option value="4">實作評估—口試評估</option>
-                                                <option value="5">實作評估—寫作評估</option>
-                                                <option value="6">實作評估—素養評估</option>
-                                                <option value="7">實作評估—動態評估</option>
-                                                <option value="8">實作評估—檔案與數位化檔案評估</option>
-                                                <option value="9">實作評估—問題/專案導向學習評估</option>
-                                                <option value="10">實作評估—概念圖/心智圖評估</option>
-                                                <option value="11">診斷評估—知識結構與認知診斷評估</option>
-                                                <option value="12">檢定評估—證照考試/電腦化適性測試</option>
-                                                <option value="13">評估方法—標準設定</option>
-                                                <option value="14">校務研究—學習成果評估</option>
-                                                <option value="15">校務研究—學生評鑑教學</option>
+                                                <option value="2">測驗相關領域</option>
                                             </select>
                                             
                                             <div id="methodDescription">
                                                 <!-- 這裡將顯示方法學介紹 -->
                                             </div>
                                             
-                                            <!-- 使用iframe来呈現内容 -->
-                                            <iframe id="contentFrame" src="1.html" frameborder="0" scrolling="no"></iframe>
-                                            
+                                            <!-- 使用iframe来呈現内容 -->                                         
+    <iframe id="contentFrame" src="1.html" frameborder="0"></iframe>
+
                                             <script>
                                                 const assessmentSelect = document.getElementById("assessmentSelect");
                                                 const contentFrame = document.getElementById("contentFrame");
@@ -101,5 +96,9 @@
                                                     contentFrame.src = selectedPage;
                                                 });
                                             </script>
-                                        </body>
-                                        </html>
+    
+    <footer>
+        &copy; 2024. All rights reserved.
+    </footer>
+</body>
+</html>
